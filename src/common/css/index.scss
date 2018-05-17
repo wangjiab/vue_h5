@@ -1,0 +1,67 @@
+@import './px2rem.scss';
+$designWidth: 750;
+html{
+    height: 100%;
+}
+body {
+   margin: 0px;
+   margin: 0px;
+   height: 100%;
+   background: #FFA9AC url('../../assets/bg.png') no-repeat;
+   background-size: cover;
+ #app{
+   width: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top:rem(142);
+   ::-webkit-input-placeholder{
+    // padding-left: rem(20);
+    font-size: 32px;
+    color:#ccc;
+    vertical-align: middle;
+   }
+   input{
+     font-size: 32px;
+     padding-left: rem(20);
+     width:rem(480);
+     height: rem(88);
+     margin-bottom:rem(20);
+     border: 0px;
+     border-radius: 10px;
+   }
+    #js-btn{
+       width:rem(500);
+     height: rem(88);
+     background-color: #f33;
+     text-align: center;
+     line-height: rem(88);
+     font-size: 32px;
+     color: white;
+      border-radius: 10px;
+    }
+    .result{
+       width:rem(500);
+      //  height: rem(250);
+       background-color:#ffbabd;
+       margin-top:rem(40);
+       border-radius: 10px;
+       font-size: 32px;
+       p{
+         margin:0px;
+         padding: 0px;
+         margin-top:rem(16);
+         padding-left: 25px;
+         color:#000;
+       }
+        p:last-child{
+            margin-bottom:rem(16);
+        }
+       b{
+      color:#F00;
+      font-weight: 700;
+       }
+    }
+ }
+}
